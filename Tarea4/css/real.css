@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,500;1,700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EB9CD5;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  font-size: 50px;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: colores 5s infinite;
+  -webkit-animation: colores 5s infinite;
+}
+
+#who img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+#who p {
+  text-align: center;
+  max-width: 50%;
+  margin: 30px auto;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  user-select: none;
+  cursor: default;
+  background-color: #e97ac9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+#who p:hover {
+  scale: 1.01;
+  background-color: blue;
+  box-shadow: rgba(255, 255, 0, 0.4) 0px 5px, rgba(255, 255, 0, 0.3) 0px 10px, rgba(255, 255, 0, 0.2) 0px 15px, rgba(255, 255, 0, 0.1) 0px 20px, rgba(255, 255, 0, 0.05) 0px 25px;
+}
+
+.contenedor-doble {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 50%;
+  margin: auto;
+}
+
+.contenedor-doble h2 {
+  font-size: 30px;
+}
+
+.contenedor-doble p {
+  margin: 15px 0;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.contenedor-doble div {
+  max-width: 50%;
+}
+
+.contenedor-imagen {
+  max-width: 50%;
+}
+
+.contenedor-imagen img {
+  width: 100%;
+}
+
+h2 {
+  color: #3B64C0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1270px) {
+  .contenedor-doble h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .contenedor-doble p {
+    font-size: 10px;
+    padding: 0 20px;
+  }
+  #who p {
+    font-size: 10px;
+  }
+  .contenedor-doble {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .contenedor-doble div {
+    max-width: 100%;
+  }
+  
+  .contenedor-imagen {
+    max-width: 100%;
+  }
+}

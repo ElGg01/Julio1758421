@@ -1,0 +1,93 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #CF3D4B;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+main {
+  max-width: 80%;
+  margin: auto;
+}
+
+.presentacion h1 {
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  margin: 30px 0;
+  font-size: 50px;
+}
+
+.presentacion img {
+  display: block;
+  margin: auto;
+  max-width: 30%;
+  filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+}
+
+.contenedor-doble {
+  display: flex;
+}
+
+.contenedor-doble section {
+  max-width: 50%;
+}
+
+.contenedor-texto p {
+  color: white;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contenedor-imgs img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 1270px) {
+  .contenedor-doble {
+    flex-direction: column;
+  }
+  .contenedor-doble section {
+    max-width: 100%;
+  }
+  .contenedor-texto p {
+    font-size: 10px;
+  }
+  .contenedor-imgs img {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .presentacion img {
+    max-width: 50%;
+  }
+}

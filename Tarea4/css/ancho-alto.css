@@ -1,0 +1,112 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0B2E85;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+.presentacion {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.presentacion img {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+.habilidades {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Caveat', cursive;
+}
+
+#titulo-tabla {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 3px solid #ECEBE4;
+  border-top: 3px solid #ECEBE4;
+  font-size: 30px;
+  background-color: #09205c;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  color: black;
+  font-weight: bold;
+  border: 3px solid #ECEBE4;
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+  background-color: yellow;
+  font-size: 30px;
+}
+
+td {
+  padding: 8px;
+  color: #ECEBE4;
+  border-left: 3px solid #ECEBE4;
+  border-right: 3px solid #ECEBE4;
+  font-size: 20px;
+}
+
+tr:nth-last-child(1){
+  border-bottom: 3px solid #ECEBE4;
+}
+
+tr:nth-child(even){
+  background-color: #3a3a3a;
+}
+
+@media screen and (max-width: 1270px) {
+  #titulo-tabla {
+    font-size: 10px;
+  }
+
+  th, td {
+    font-size: 8px;
+  }
+
+  #tabla {
+    border-left: none;
+    border-right: none;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
