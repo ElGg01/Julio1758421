@@ -1,0 +1,9 @@
+footer {
+  height: 100px;
+  background: -webkit-linear-gradient(right, #9f01ea, #9f01ea);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
